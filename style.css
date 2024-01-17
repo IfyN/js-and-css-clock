@@ -1,47 +1,40 @@
+#clock-face {
+  position: relative;
+  margin: auto;
+  height: 50vw;
+  width: 50vw;
+  background: url("https://images.unsplash.com/photo-1702529939203-04c666ee2b7f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDU1MDE1ODJ8&ixlib=rb-4.0.3&q=85")
+    no-repeat fixed center;
+  background-size: 100%;
+}
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background-color: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
 
-    html {
-      background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
-      background-size: cover;
-      font-family: 'helvetica neue';
-      text-align: center;
-      font-size: 10px;
-    }
+#hour {
+  top: 27%;
+  left: 49%;
+  height: 23%;
+  width: 2%;
+  opacity: 0.8;
+}
+#minute {
+  top: 20%;
+  left: 49.2%;
+  height: 30%;
+  width: 1.5%;
+  opacity: 0.8;
+}
 
-    body {
-      margin: 0;
-      font-size: 2rem;
-      display: flex;
-      flex: 1;
-      min-height: 100vh;
-      align-items: center;
-    }
-
-    .clock {
-      width: 30rem;
-      height: 30rem;
-      border: 20px solid white;
-      border-radius: 50%;
-      margin: 50px auto;
-      position: relative;
-      padding: 2rem;
-      box-shadow:
-        0 0 0 4px rgba(0,0,0,0.1),
-        inset 0 0 0 3px #EFEFEF,
-        inset 0 0 10px black,
-        0 0 10px rgba(0,0,0,0.2);
-    }
-
-    .clock-face {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transform: translateY(-3px); /* account for the height of the clock hands */
-    }
-
-    .hand {
-      width: 50%;
-      height: 6px;
-      background: black;
-      position: absolute;
-      top: 50%;
-    }
+#second {
+  top: 14%;
+  left: 49.5%;
+  height: 36%;
+  width: 1%;
+  opacity: 0.8;
+}
